@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-apple-gray-50 text-apple-gray-700 font-sans antialiased;
+  }
+  
+  * {
+    @apply border-apple-gray-200;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    @apply text-base;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-apple-gray-400 text-sm;
+  }
+  
+  button {
+    @apply transition-all duration-200 transform active:scale-95;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-apple-gray-300 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-apple-gray-400;
+  }
+}
